@@ -161,6 +161,8 @@ install_cmds_(Home,Vsn) ->
 		 _ -> 
 		     code:priv_dir(?APP)
 	     end,
+    %% FIXME: xdg-desktop-icon install --novendor Desktop/Pong.desktop
+    %% if xdg-desktop-icon command exists
     {[lists:flatten(Cmd)||Cmd <- install_cmd_(Home, Vsn, AppDir,APPIMG)],
      []}.
 
